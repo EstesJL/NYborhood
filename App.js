@@ -5,6 +5,7 @@ import {
   View,
   StyleSheet,
 } from 'react-native';
+require('dotenv').config();
 import { Main } from './src/components/Main';
 
 export default class App extends React.Component {

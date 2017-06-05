@@ -12,7 +12,6 @@ import { Play } from './Play';
 import { Eat } from './Eat';
 
 
-
 export class Main extends React.Component {
   constructor() {
     super();

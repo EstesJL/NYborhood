@@ -6,6 +6,16 @@ import {
   StyleSheet,
 } from 'react-native';
 
+const yelp = require('yelp-fusion');
+
+console.warn(process.env.YELP_CLIENT);
+
+const token = yelp.accessToken(clientId, clientSecret).then(response => {
+  console.log(response.jsonBody.access_token);
+}).catch(e => {
+  console.log(e);
+});
+
 export class Eat extends React.Component {
   constructor(props) {
     super(props);
